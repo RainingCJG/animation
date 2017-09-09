@@ -1,0 +1,294 @@
+
+/*********重置样式*********/
+*{
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+body,html{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+li,ul{
+	list-style: none;
+}
+
+/*********内容部分*********/
+.container{
+	width: 400%;
+	height: 100%;
+}
+
+/*页面整体布局*/
+.page{
+	width: 25%;
+	height: 100%;
+}
+
+/*页面一*/
+.page1{
+	background: url(../images/QixiA.png) no-repeat;
+}
+
+/*云朵*/
+.cloud1{
+	position: absolute;
+	left: -5%;
+	top: 15%;
+	width: 15%;
+	height: 15%;
+	background: url(../images/cloud1.png) no-repeat 0 0;
+	background-size: 100% 100%;
+}
+
+.cloud2{
+	position: absolute;
+	left: 85%;
+	top: 0;
+	width: 20%;
+	height: 16%;
+	background: url(../images/cloud2.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+/*太阳*/
+.sun{
+	position: absolute;
+	left: 40%;
+	top: 0;
+	width: 10%;
+	height: 10%;	
+	background: url(../images/sun.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+/*页面二*/
+.page2{
+	background-attachment: fixed;
+	background: url(../images/QixiB-bright.png);
+}
+
+/*开灯*/
+.preloadbg{
+	background-attachment: fixed;
+	background: url(../images/QixiB-dark.png);
+}
+
+/*门*/
+.door{
+	position: absolute;
+	width: 12.8%;
+	height: 23.7%;
+	left: 52.1%;
+	top: 48.1%;
+	overflow: hidden;
+}
+
+/*门的左边*/
+.door-left{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 50%;
+	height: 100%;
+	background: url(../images/door-left.png) no-repeat;
+	background-size: 100% 100%;
+	
+}
+
+/*门的右边*/
+.door-right{
+	position: absolute;
+	left: 50%;
+	top: 0;
+	width: 50%;
+	height: 100%;
+	background: url(../images/door-right.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+/*小鸟*/
+.bird{
+	position: absolute;
+	left: 100%;
+	top: 10%;
+	width: 5%;
+	height: 6%;
+	background: url(../images/bird.png) no-repeat 0 0;
+	background-size: 300% 100%;
+}
+
+/*页面三*/
+.page3{
+	position: relative;
+	background: url(../images/QixiC.png) no-repeat;
+}
+
+/*女孩*/
+.girl{
+	position: absolute;
+	left: 48%;
+	top:49%;
+	width: 10%;
+	height: 23%;
+	background: url(../images/原图/person/girl.png) no-repeat 0 0;
+	background-size: 700% 100%;
+}
+
+/*水波*/
+.water1{
+	left: 40%;
+	top: 80%;
+	width: 10%;
+	height: 1.6%;	
+}
+
+.water2{
+	left: 45%;	
+	top: 83%;
+	width: 15%;
+	height: 1%;
+}
+
+.water3{
+	left: 35%;
+	top: 90%;
+	width: 20%;
+	height: 3%;
+}
+
+.water4{
+	left: 42%;	
+	top: 95%;
+	width: 25%;
+	height: 1.5%;
+}
+
+.water{
+	position: absolute;
+	background: url(../images/water.png) no-repeat 0 0;
+	background-size: 328% 100%;
+}
+
+/*星星*/
+.star{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+.star > li{
+	position: absolute;
+	width: 2%;
+	height: 3%;
+	background: url(../images/stars.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+.star1 {
+    top: 20%;
+    left: 30%;
+}
+
+.star2 {
+    top: 15%;
+    left: 20%;
+}
+
+.star3 {
+    top: 25%;
+    left: 85%;
+}
+
+.star4 {
+    top: 30%;
+    left: 70%;
+}
+
+.star5 {
+    top: 25%;
+    left: 20%;
+}
+
+.star6 {
+    top: 10%;
+    left: 65%;
+}
+
+/*撒花*/
+.spillflower{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+}
+
+.flower{
+	position: absolute;
+	z-index: 2;
+	-webkit-animation: myrotate 20s;
+	   -moz-animation: myrotate 20s;
+	    -mz-animation: myrotate 20s;
+			animation: myrotate 20s;
+}
+
+/*花旋转*/
+@-webkit-keyframes myrotate{
+	0%{-webkit-transform: rotate(0deg);}
+	50%{-webkit-transform: rotate(1080deg);}
+	100%{-webkit-transform: rotate(0deg) translate3d(50px,50px,50px);}
+}
+
+@-moz-keyframes myrotate{
+	0%{-moz-transform: rotate(0deg);}
+	50%{-moz-transform: rotate(1080deg);}
+	100%{-moz-transform: rotate(0deg) translate3d(50px,50px,50px);}
+}
+
+@-ms-keyframes myrotate{
+	0%{-ms-transform: rotate(0deg);}
+	50%{-ms-transform: rotate(1080deg);}
+	100%{-ms-transform: rotate(0deg) translate3d(50px,50px,50px);}
+}
+
+@keyframes myrotate{
+	0%{transform: rotate(0deg);}
+	50%{transform: rotate(1080deg);}
+	100%{transform: rotate(0deg) translate3d(50px,50px,50px);}
+}
+
+.page{
+	position: relative;
+	float: left;
+	width: 25%;
+	height: 100%;
+	background-size: 100% 100%;
+}
+
+/*小男孩*/
+.boy{
+	position: absolute;
+	width: 10%;
+	height: 23%;
+	background: red;
+	top: 54%;
+	left: 6%;
+	background: url(../images/原图/person/boy-walk.png) no-repeat 0 0;
+	background-size: 400% 100%;
+}
+
+.boy-bg{
+	background-attachment: fixed;
+	background: url(../images/原图/person/boy-flower.png) no-repeat 0 0;
+	background-size: 400% 100%;
+}
+
+.boy-rotate{
+	background-attachment: fixed;
+	background: url(../images/原图/person/boy-rotate.png) no-repeat 0 0;
+	background-size: 600% 100%;
+}
+
